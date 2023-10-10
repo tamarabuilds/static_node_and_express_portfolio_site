@@ -2,26 +2,29 @@
 Learn more about the developer on <a href="https://www.linkedin.com/in/tamarabuilds/" target="_blank">LinkedIn</a>
 
 
-
-Unit 06 project for the Full Stack JavaScript Techdegree.
-
-This project utilizes Node.js and Express to create a modern portfolio showcasing the projects I've built. There is a landing page, an 'about' page, and a series of project pages.
+Unit 06 project for the Full Stack JavaScript Techdegree. This project utilizes Node.js and Express to create a modern portfolio showcasing the projects I've built. There is a landing page, an 'about' page, and a series of project pages.
 
 
-## Installation
+## How It's Made
 
-There is nothing required to install for this project.
+Tech used: HTML, CSS (proided by Treehouse), JavaScript, Express, Node.js and Pug
+
+I used npm to manage packages necessary for the project. This includes express and pug so you'll need to run 'npm install' in the project folder if you want to run the files locally.
 
 
-## Usage
+
+
+
+## Optimizations
 
 Simply click around the page to see my portfolio or learn more about me.
 
-## Technologies Used
+## Lessons Learned
 
-* JavaScript
-* CSS (project file provided by Treehouse, slighly modified for styling)
-* HTML (prokect file provided by Treehouse)
+Picked up a bunch of skills including:
+ * Building an express server
+ * Efficiently setting up gitpages for my projects
+ * Importance of standardizing my READMEs
 
 ## Extra Features
 

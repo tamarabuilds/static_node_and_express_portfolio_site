@@ -2,6 +2,10 @@
 const express = require('express');
 const data = require('./data.json');
 const path = require('path');
+const app = express();                              // Assume i need this?
+const indexRouter = require('./routes/index');
+const aboutRouter = require('./routes/about');
+const projectRouter = require('./routes/project');
 
 /**
  * Middleware to set up:
@@ -17,9 +21,9 @@ app.use('/static', express.static('public'));
  * (2) About route to render the 'About' page
  * (3) Dynamic 'project' route based on the id of the project to render
  */
-app.use('/', mainRoutes);
-app.use('/about', aboutRoutes);
-app.use('/project', projectRoutes);
+app.use('/', indexRouter);
+app.use('/about', aboutRouter);
+app.use('/project', projectRouter);
 
 app.use('/', (req, res, next) => {
     console.log('one')

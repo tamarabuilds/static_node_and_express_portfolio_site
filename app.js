@@ -1,8 +1,8 @@
-// Variables to access necessary dependencies
+// Import Express and set up the app
 const express = require('express');
 const data = require('./data.json');
-const path = require('path');
-const app = express();                              // Assume i need this?
+// const path = require('path');
+const app = express();
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
 const projectRouter = require('./routes/project');
@@ -12,7 +12,7 @@ const projectRouter = require('./routes/project');
  * (1) the pug view engine and 
  * (2) the express static method to serve the static files in the 'public' folder
  */
-app.set('view engine', 'pug');2
+app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
 /**
@@ -25,8 +25,37 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/project', projectRouter);
 
-app.use('/', (req, res, next) => {
-    console.log('one')
+
+/**
+ * If user navigates to a non-existent route, the app will catch the 404 error and display nice message
+ */
+app.use((req, res, next) => {
+    console.log(`404 error handler called`);
+    const err = new Error();
+    err.status = 404;
+    err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
+    console.log(err);
+    throw err;
+});
+
+/**
+ * Gloabl error handler to manage any server errors
+ */
+app.use((err, req, res, next) => {
+
+    if (err){
+        console.log(`Global error handler called`, err);
+    }
+
+    if (err.status === 404) {
+        res.status = 404;
+        res.render('page-not-found', { err })
+    } else {
+        err.message = err.message || `Err, sorry something happened`;
+        res.status(err.status || 500);
+        console.log(err);
+        res.render('error', { err });
+    };
 });
 
 

@@ -28,10 +28,10 @@ Picked up a bunch of skills including:
 
 ## Extra Features
 
-* Cusomized package.json file so that running npm start will run the app.
+* Cusomized package.json file so that running 'npm start' will run the app.
 * Renders helpful PUG templates in the error-handling middleware.
-  * When the status property is a 404, a page-not-found.pug template is rendered.
-  * For any other status code, the error.pug template is rendered.
+  * When the status property is a 404, a 'page-not-found.pug' template is rendered.
+  * For any other status code, the 'error.pug' template is rendered.
 * Structure, style and CSS were updated:
   * Updated font to Lexend to improve readability. Learn more: https://www.lexend.com/
   * Background image updated

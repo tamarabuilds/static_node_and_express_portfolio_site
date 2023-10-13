@@ -11,20 +11,20 @@ router.get('/', (req, res, next) => {
 });
 
 
-// GET project page
-router.get(`/project/:id`, (req, res, next) => {
-    const projectID = req.params.id;
-    const project = projects.find( ({id}) => id === +projectID );
+// // GET project page
+// router.get(`/project/:id`, (req, res, next) => {
+//     const projectID = req.params.id;
+//     const project = projects.find( ({id}) => id === +projectID );
 
-    if (project){
-        // pass project data to project template
-        res.render('project', { project });
-    } else {
-        // set the status code to 404
-        res.sendStatus(404);
-    }
+//     if (project){
+//         // pass project data to project template
+//         res.render('project', { project });
+//     } else {
+//         // set the status code to 404
+//         res.sendStatus(404);
+//     }
 
-} )
+// } )
 
 // Custom error route for testing
 router.get('/error', (req, res, next) => {

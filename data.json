@@ -7,7 +7,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tamarabuilds.github.io/my-random-quote-generator/",
             "github_link": "https://github.com/tamarabuilds/my-random-quote-generator",
-            "image_urls": ["/images/01/random01.png", "images/01/random02.png", "images/01/random03.png", "images/01/random04.png"]
+            "image_urls": ["/static/images/01/random01.png", "/static/images/01/random02.png", "/static/images/01/random03.png", "/static/images/01/random04.png"]
         },
         {
             "id": 2,
@@ -16,7 +16,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tamarabuilds.github.io/my-random-quote-generator/",
             "github_link": "https://github.com/tamarabuilds/my-random-quote-generator",
-            "image_urls": ["/images/01/random01.png", "images/01/random02.png", "images/01/random03.png", "images/01/random04.png"]
+            "image_urls": ["/static/images/01/random01.png", "/static/images/01/random02.png", "/static/images/01/random03.png", "/static/images/01/random04.png"]
         },
         {
             "id": 3,
@@ -25,7 +25,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tamarabuilds.github.io/my-random-quote-generator/",
             "github_link": "https://github.com/tamarabuilds/my-random-quote-generator",
-            "image_urls": ["/images/01/random01.png", "images/01/random02.png", "images/01/random03.png", "images/01/random04.png"]
+            "image_urls": ["/static/images/01/random01.png", "/static/images/01/random02.png", "/static/images/01/random03.png", "/static/images/01/random04.png"]
         }
     ]
 }

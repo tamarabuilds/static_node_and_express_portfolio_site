@@ -1,7 +1,6 @@
 // Import Express and set up the app
 const express = require('express');
 const data = require('./data.json');
-// const path = require('path');
 const app = express();
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');

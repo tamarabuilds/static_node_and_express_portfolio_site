@@ -31,11 +31,13 @@ app.use('/project', projectRouter);
  */
 app.use((req, res, next) => {
     console.log(`404 error handler called`);
-    const err = new Error('err');
-    err.status = 404;
-    err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
+    // const err = new Error('err');
+    // err.status = 404;
+    // err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
+    res.status = 404;
     console.log(err);
-    next(err);
+    res.render('page-not-found', { err })
+    // res.render('page-not-found')
 });
 
 /**
@@ -44,11 +46,15 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     // confirm there's an error
     if (err){
-        console.log(`Global error handler called`, err);
+        console.log(`Global error handler called`);
+        res.locals.message = err.message;               /// need?
+        console.log(err.message)            // err not defined
+        console.log(err.status)         // undefined
     }
     // check for 404 error, if so, render page-not-found
+
     if (err.status === 404) {
-        res.status = 404;
+        res.status(404);
         res.render('page-not-found', { err })
     } else {
         err.message = err.message || `Err, sorry something happened`;

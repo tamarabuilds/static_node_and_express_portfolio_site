@@ -11,31 +11,35 @@ router.get('/', (req, res, next) => {
 });
 
 
-// // GET project page
-// router.get(`/project/:id`, (req, res, next) => {
-//     const projectID = req.params.id;
-//     const project = projects.find( ({id}) => id === +projectID );
+// GET project page
+router.get(`/project/:id`, (req, res, next) => {
+    const projectID = req.params.id;
+    const project = projects.find( ({id}) => id === +projectID );
 
-//     if (project){
-//         // pass project data to project template
-//         res.render('project', { project });
-//     } else {
-//         // set the status code to 404
-//         res.sendStatus(404);
-//     }
+    if (project){
+        // pass project data to project template
+        res.render('project', { project });
+    } else {
+        // set the status code to 404
+        const err = new Error();
+        err.status = 404;
+        err.message = "Woops! That project page doesn't exist yet";
+        next(err);
+    }
 
-// } )
+} )
 
-// Custom error route for testing
+// GET error rout to throw 500 server error for testing
 router.get('/error', (req, res, next) => {
     // Log that this function has started
     console.log(`Custom error route called`);
 
-    const err = new Error('err');
+    const err = new Error();
     err.message = 'Custom 500 error thrown here';
     err.status = 500;
     throw err;
 });
+
 
 
 

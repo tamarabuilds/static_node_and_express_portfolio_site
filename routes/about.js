@@ -14,14 +14,4 @@ router.get('/', (req, res, next) => {
 });
 
 
-router.get('/error', (req, res, next) => {
-    console.log(`Custom error route called`);
-
-    const err = new Error();
-    err.message = 'Custom 500 error thrown here';
-    err.status = 500;
-    throw err;
-});
-
-
 module.exports = router;

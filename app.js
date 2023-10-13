@@ -26,27 +26,28 @@ app.use('/about', aboutRouter);
 app.use('/project', projectRouter);
 
 
+
 /**
  * If user navigates to a non-existent route, the app will catch the 404 error and display nice message
  */
 app.use((req, res, next) => {
     console.log(`404 error handler called`);
-    const err = new Error();
+    const err = new Error('err');
     err.status = 404;
     err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
     console.log(err);
-    throw err;
+    next(err);
 });
 
 /**
  * Gloabl error handler to manage any server errors
  */
 app.use((err, req, res, next) => {
-
+    // confirm there's an error
     if (err){
         console.log(`Global error handler called`, err);
     }
-
+    // check for 404 error, if so, render page-not-found
     if (err.status === 404) {
         res.status = 404;
         res.render('page-not-found', { err })

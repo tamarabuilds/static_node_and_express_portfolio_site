@@ -27,17 +27,17 @@ app.use('/project', projectRouter);
 
 
 /**
- * If user navigates to a non-existent route, the app will catch the 404 error and display nice message
+ * If user navigates to a non-existening route, the app will catch the 404 error and display nice message
  */
 app.use((req, res, next) => {
     console.log(`404 error handler called`);
-    // const err = new Error('err');
-    // err.status = 404;
-    // err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
-    res.status = 404;
+    const err = new Error('err');
+    err.status = 404;
+    err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
+    // res.status = 404; NOT WORKING WITH RES
+    // res.status(404)
     console.log(err);
     res.render('page-not-found', { err })
-    // res.render('page-not-found')
 });
 
 /**
@@ -48,17 +48,15 @@ app.use((err, req, res, next) => {
     if (err){
         console.log(`Global error handler called`);
         res.locals.message = err.message;               /// need?
-        console.log(err.message)            // err not defined
-        console.log(err.status)         // undefined
     }
     // check for 404 error, if so, render page-not-found
-
+    // WHY DO WE NEED THIS EXTRA IF?????
     if (err.status === 404) {
         res.status(404);
         res.render('page-not-found', { err })
     } else {
         err.message = err.message || `Err, sorry something happened`;
-        res.status(err.status || 500);
+        err.status = err.status || 500;
         console.log(err);
         res.render('error', { err });
     };

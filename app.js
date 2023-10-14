@@ -28,26 +28,28 @@ app.use('/project', projectRouter);
 
 /**
  * If user navigates to a non-existening route, the app will catch the 404 error and display nice message
+ * 
+ * NOTE: I have confusion why setting res.status was not working when it did in the videos.
+ * I needed to create an error object.
  */
 app.use((req, res, next) => {
     console.log(`404 error handler called`);
     const err = new Error('err');
     err.status = 404;
     err.message = `Hey there! This page isn't available but at least this friendly message is :)`;
-    // res.status = 404; NOT WORKING WITH RES
-    // res.status(404)
     console.log(err);
     res.render('page-not-found', { err })
 });
 
 /**
  * Gloabl error handler to manage any server errors
+ * 
  */
 app.use((err, req, res, next) => {
     // confirm there's an error
     if (err){
-        console.log(`Global error handler called`);
-        res.locals.message = err.message;               /// need?
+        console.log(`Global error handler called`)
+        console.log(err);
     }
     // check for 404 error, if so, render page-not-found
     // WHY DO WE NEED THIS EXTRA IF?????

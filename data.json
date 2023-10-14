@@ -3,7 +3,7 @@
         {
             "id": 1,
             "project_name": "My Random Quote Generator",
-            "description": "Some big description here",
+            "description": "I practied basic JavaScript syntax and data structures by building a Random Quote Generator, displaying a random quote when a user clicks a button or the page auto-refreshes. Additionally, the background color changes to a random color.",
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://tamarabuilds.github.io/my-random-quote-generator/",
             "github_link": "https://github.com/tamarabuilds/my-random-quote-generator",
@@ -12,20 +12,38 @@
         {
             "id": 2,
             "project_name": "Data Pagination and Filtering",
-            "description": "Some big description here",
+            "description": "This project focuses on pagination to enhance the usability of this ficional student directory. With an initial list of 42 students, this code displays only 9 students per page. Additional features include: search bar with pagination, 'no results' displayed for the user if nothing matched the search, and dynamic updating to the search results as characters are typed in the search bar.",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live_link": "https://tamarabuilds.github.io/my-random-quote-generator/",
-            "github_link": "https://github.com/tamarabuilds/my-random-quote-generator",
-            "image_urls": ["/static/images/01/random01.png", "/static/images/01/random02.png", "/static/images/01/random03.png", "/static/images/01/random04.png"]
+            "live_link": "https://tamarabuilds.github.io/data-pagination-and-filtering/",
+            "github_link": "https://github.com/tamarabuilds/data-pagination-and-filtering",
+            "image_urls": ["/static/images/02/pagination01.jpeg", "/static/images/02/pagination02.jpeg", "/static/images/02/pagination03.jpeg", "/static/images/02/pagination04.jpeg"]
         },
         {
             "id": 3,
             "project_name": "Interactive Form",
-            "description": "Some big description here",
+            "description": "I added JavaScript to enhance an interactive registraion form for a fictional Full Stack conference. I added validation with visual indicators, dynamic total cost updating, payment fields to update with payment type selection, field focus for keyboard navication, real-time error messaging on the name and email fields with conditional error messaging on the email field.",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live_link": "https://tamarabuilds.github.io/my-random-quote-generator/",
-            "github_link": "https://github.com/tamarabuilds/my-random-quote-generator",
-            "image_urls": ["/static/images/01/random01.png", "/static/images/01/random02.png", "/static/images/01/random03.png", "/static/images/01/random04.png"]
+            "live_link": "https://tamarabuilds.github.io/my-interactive-form/",
+            "github_link": "https://github.com/tamarabuilds/my-interactive-form",
+            "image_urls": ["/static/images/03/form01.jpg", "/static/images/03/form02.jpg", "/static/images/03/form03.jpg"]
+        },
+        {
+            "id": 4,
+            "project_name": "OOP Pokemon Finder",
+            "description": "I created a browser-based pokemon name finder game 'Pokemon Finder.' This utilizes Object-Oriented Programming to select a random, hidden pokemon name, which a user tries to guess. Additional features include: being able to use the physical keyboard in addition to the on-screen one and personalizing the game to be pokemon-themed.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://tamarabuilds.github.io/oop-game-show/",
+            "github_link": "https://github.com/tamarabuilds/oop-game-show",
+            "image_urls": ["/static/images/04/oop01.jpeg", "/static/images/04/oop02.jpeg", "/static/images/04/oop03.jpeg"]
+        },
+        {
+            "id": 5,
+            "project_name": "API Request Employee Directory",
+            "description": "This is an employee directory for a fictional company, 'Awesome Startup'. This directory helps all the remote employees share contact information with each other. For this fictional company, this code uses the Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees” and build an employee directory. Addional features include: search filter by name, toggle between employees while looking at their modal, and some CSS was updated with a background image and Lexand font.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://tamarabuilds.github.io/public-api-requests-employee-directory/",
+            "github_link": "https://github.com/tamarabuilds/public-api-requests-employee-directory",
+            "image_urls": ["/static/images/05/api01.jpeg", "/static/images/05/api02.jpeg", "/static/images/05/api03.jpeg", "/static/images/05/api04.jpeg"]
         }
     ]
 }

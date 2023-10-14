@@ -1,11 +1,9 @@
-console.log(`start index.js file`)
 const express = require('express');
 const router = express.Router();
 const { projects } = require('../data.json');
 
 // GET home page
 router.get('/', (req, res, next) => {
-    console.log(`inside index.js`);
     // rendering the index page and passing it all the project data
     res.render('index', { projects });
 });

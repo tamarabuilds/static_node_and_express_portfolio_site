@@ -1,7 +1,6 @@
 # static_node_and_express_portfolio_site
 Learn more about the developer on <a href="https://www.linkedin.com/in/tamarabuilds/" target="_blank">LinkedIn</a>
 
-
 Unit 06 project for the Full Stack JavaScript Techdegree. This project utilizes Node.js and Express to create a modern portfolio showcasing the projects I've built. There is a landing page, an 'about' page, and a series of project pages.
 
 
@@ -12,19 +11,21 @@ Tech used: HTML, CSS (proided by Treehouse), JavaScript, Express, Node.js and Pu
 I used npm to manage packages necessary for the project. This includes express and pug so you'll need to run 'npm install' in the project folder if you want to run the files locally.
 
 
-
-
-
 ## Optimizations
 
-Simply click around the page to see my portfolio or learn more about me.
+I spent a lot of time working on managing errors. There's even a server test error page if you navigate to '/error'
+
 
 ## Lessons Learned
 
 Picked up a bunch of skills including:
  * Building an express server
+ * Working with npm and customizing the package.json file
+ * Setting routes and middleware
+ * Creating Pug templates 
  * Efficiently setting up gitpages for my projects
  * Importance of standardizing my READMEs
+
 
 ## Extra Features
 
@@ -34,8 +35,9 @@ Picked up a bunch of skills including:
   * For any other status code, the 'error.pug' template is rendered.
 * Structure, style and CSS were updated:
   * Updated font to Lexend to improve readability. Learn more: https://www.lexend.com/
-  * Background image updated
-  * Box shadows added
+  * Favicon update to a little star
+  * Background for sidebar updated
+  * All image and button borders are a little round
 
 
 ## Contributing

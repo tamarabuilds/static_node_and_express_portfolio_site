@@ -3,6 +3,8 @@ Learn more about the developer on <a href="https://www.linkedin.com/in/tamarabui
 
 Unit 06 project for the Full Stack JavaScript Techdegree. This project utilizes Node.js and Express to create a modern portfolio showcasing the projects I've built. There is a landing page, an 'about' page, and a series of project pages.
 
+![Screenshot 2023-10-13 at 8 59 17 PM](https://github.com/tamarabuilds/static_node_and_express_portfolio_site/assets/98510821/72960087-bc40-4174-93de-d95d70103509)
+
 
 ## How It's Made
 

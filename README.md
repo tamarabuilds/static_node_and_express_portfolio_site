@@ -36,10 +36,10 @@ Picked up a bunch of skills including:
   * When the status property is a 404, a 'page-not-found.pug' template is rendered.
   * For any other status code, the 'error.pug' template is rendered.
 * Structure, style and CSS were updated:
-  * Updated font to Lexend to improve readability. Learn more: https://www.lexend.com/
-  * Favicon update to a little star
-  * Background for sidebar updated
-  * All image and button borders are a little round
+  * Updated font to Lexend to improve readability. Learn more: https://www.lexend.com/.
+  * Favicon update to a little star.
+  * Background for sidebar updated.
+  * All image and button borders are a little round.
 
 
 ## Contributing

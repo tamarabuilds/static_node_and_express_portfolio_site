@@ -37,7 +37,7 @@ Picked up a bunch of skills including:
   * For any other status code, the 'error.pug' template is rendered.
 * Structure, style and CSS were updated:
   * Updated font to Lexend to improve readability. Learn more: https://www.lexend.com/
-  * A custom logo favicon update to a little star.
+  * A custom logo favicon was added as a little star.
   * Background color for the sidebar was updated.
   * All image and button borders are rounded off.
 

@@ -23,7 +23,8 @@ body {
   line-height: 1.5;
   color: #0a0a0a;
   background: #fefefe;
-  background: #000;
+  /* background: #000; */
+  background: rgba(246, 183, 38, 1);
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
